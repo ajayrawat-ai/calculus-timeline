@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Timeline of Foundational Calculus & Analysis Textbooks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="main-header">
+            <h1>Historical Timeline of Foundational Calculus & Analysis Textbooks</h1>
+            <p class="subtitle">Explore the evolution of mathematical analysis from the 17th century to present day</p>
+        </header>
+
+        <!-- Navigation Controls -->
+        <nav class="timeline-controls">
+            <div class="filter-buttons">
+                <button class="btn btn--outline filter-btn active" data-period="all">All Periods</button>
+                <button class="btn btn--outline filter-btn" data-period="17th c.">17th Century</button>
+                <button class="btn btn--outline filter-btn" data-period="18th c.">18th Century</button>
+                <button class="btn btn--outline filter-btn" data-period="19th c.">19th Century</button>
+                <button class="btn btn--outline filter-btn" data-period="20th c.">20th Century</button>
+                <button class="btn btn--outline filter-btn" data-period="21st c.">21st Century</button>
+            </div>
+            <div class="search-container">
+                <input type="text" class="form-control search-input" placeholder="Search by author or title..." id="searchInput">
+            </div>
+        </nav>
+
+        <!-- Legend -->
+        <div class="legend card">
+            <div class="card__body">
+                <h3>Timeline Legend</h3>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #FFD700;"></span>
+                        <span>17th Century (1600-1699)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #4169E1;"></span>
+                        <span>18th Century (1700-1799)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #8A2BE2;"></span>
+                        <span>19th Century (1800-1899)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #228B22;"></span>
+                        <span>20th Century (1900-1999)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #DC143C;"></span>
+                        <span>21st Century (2000-present)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Visualization -->
+        <div class="timeline-container">
+            <h2>Interactive Timeline</h2>
+            <div class="timeline-wrapper">
+                <div class="timeline-axis">
+                    <div class="timeline-years">
+                        <span class="year-marker">1670</span>
+                        <span class="year-marker">1750</span>
+                        <span class="year-marker">1850</span>
+                        <span class="year-marker">1950</span>
+                        <span class="year-marker">2020</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-points" id="timelinePoints"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book Cards Section -->
+        <div class="books-section">
+            <h2>Foundational Textbooks</h2>
+            <div class="books-grid" id="booksGrid"></div>
+        </div>
+
+        <!-- Century Context Sections -->
+        <div class="century-contexts">
+            <div class="century-context" data-century="17th">
+                <h3>17th Century Context</h3>
+                <p>The birth of modern calculus with Newton's method of fluxions and Leibniz's differential calculus. This century saw the first systematic approaches to handling infinitesimals and rates of change.</p>
+            </div>
+            <div class="century-context" data-century="18th">
+                <h3>18th Century Context</h3>
+                <p>The Age of Enlightenment brought systematic exposition and teaching of calculus. Euler's contributions to notation and Agnesi's pioneering work made calculus more accessible to students.</p>
+            </div>
+            <div class="century-context" data-century="19th">
+                <h3>19th Century Context</h3>
+                <p>The era of rigorization. Mathematicians like Cauchy, Weierstrass, and Riemann established the epsilon-delta foundations that form the basis of modern analysis.</p>
+            </div>
+            <div class="century-context" data-century="20th">
+                <h3>20th Century Context</h3>
+                <p>The century of pedagogical innovation and synthesis. Textbooks began balancing rigorous theory with practical applications, making advanced mathematics accessible to broader audiences.</p>
+            </div>
+            <div class="century-context" data-century="21st">
+                <h3>21st Century Context</h3>
+                <p>The digital age of mathematics education. Interactive textbooks, visualization tools, and open-access resources have transformed how calculus and analysis are taught and learned.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>Sources: Historical mathematics archives, university libraries, and digital collections</p>
+                <p>This timeline represents major influential textbooks in the development of calculus and mathematical analysis.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
